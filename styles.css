@@ -2,14 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0f2027;
-    background-image: linear-gradient(315deg, #0f2027 0%, #203a43 74%);
-    color: #ffffff;
+    background-color: #FFECB3;
+    color: #795548;
     overflow-x: hidden;
     position: relative;
 }
 
-/* Animation du fond avec des globes ou des points lumineux */
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -38,7 +36,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://www.transparenttextures.com/patterns/grey-wash-wall.png'), linear-gradient(315deg, #0f2027 0%, #203a43 74%);
+    background: url('https://www.transparenttextures.com/patterns/grey-wash-wall.png'), linear-gradient(315deg, #FFECB3 0%, #FFE082 74%);
     opacity: 0.3;
     background-size: cover;
     z-index: -1;
@@ -54,26 +52,27 @@ body::before {
 header {
     text-align: center;
     padding: 50px 20px;
+    background-color: #FFE082;
 }
 
 header h1 {
     font-size: 48px;
     margin-bottom: 10px;
-    color: #00c6ff;
+    color: #795548;
     animation: float 5s ease-in-out infinite;
 }
 
 header p {
     font-size: 18px;
-    color: #a1c4fd;
+    color: #795548;
 }
 
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
-    color: #ffffff;
-    background-color: #0072ff;
+    color: #FFFFFF;
+    background-color: #FFA000;
     border-radius: 50px;
     text-decoration: none;
     margin-top: 20px;
@@ -81,6 +80,7 @@ header p {
 }
 
 .cta-button:hover {
+    background-color: #FFC107;
     transform: scale(1.1);
 }
 
@@ -92,7 +92,7 @@ header p {
 }
 
 .feature-card {
-    background-color: #112d4e;
+    background-color: #FFECB3;
     border-radius: 10px;
     width: 30%;
     margin: 10px;
@@ -110,21 +110,20 @@ header p {
 .feature-icon {
     font-size: 50px;
     margin-bottom: 20px;
-    color: #3f72af;
+    color: #FFA000;
 }
 
-/* Nouvelle section Why Lingui */
 .why-lingui {
-    background-color: #203a43;
+    background-color: #FFE082;
     padding: 50px 20px;
     text-align: center;
-    color: #ffffff;
+    color: #795548;
 }
 
 .why-lingui h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #00c6ff;
+    color: #FFA000;
 }
 
 .benefits {
@@ -135,7 +134,7 @@ header p {
 
 .benefit-item {
     width: 45%;
-    background-color: #2c5364;
+    background-color: #FFD54F;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -150,17 +149,17 @@ header p {
 .benefit-item h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #a1c4fd;
+    color: #795548;
 }
 
 .benefit-item p {
     font-size: 16px;
+    color: #795548;
 }
 
-/* Amélioration de la section Feedback */
 .testimonials {
-    background-color: #f9f9f9;
-    color: #333333;
+    background-color: #FFECB3;
+    color: #795548;
     padding: 50px 20px;
     text-align: center;
 }
@@ -168,7 +167,7 @@ header p {
 .testimonials h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #203a43;
+    color: #795548;
 }
 
 .testimonial-carousel {
@@ -179,7 +178,7 @@ header p {
 }
 
 .testimonial-card {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border-radius: 10px;
     padding: 20px;
     width: 300px;
@@ -202,12 +201,13 @@ header p {
 
 .testimonial-card strong {
     font-size: 14px;
-    color: #203a43;
+    color: #795548;
 }
 
 .download {
     text-align: center;
     padding: 50px 20px;
+    background-color: #FFECB3;
 }
 
 .download-button {
@@ -215,20 +215,62 @@ header p {
     margin: 10px;
     padding: 15px 30px;
     font-size: 18px;
-    color: #ffffff;
-    background-color: #0072ff;
+    color: #FFFFFF;
+    background-color: #FFA000;
     border-radius: 50px;
     text-decoration: none;
     transition: transform 0.3s ease;
 }
 
 .download-button:hover {
+    background-color: #FFC107;
     transform: scale(1.1);
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #112d4e;
-    color: #ffffff;
+    background-color: #795548;
+    color: #FFFFFF;
+}
+
+.app-name {
+    color: #795548;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app-name {
+    animation: bounce 2s ease infinite;
+}
+
+#download-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #FFA000;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #FFC107;
+    transform: scale(1.1);
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border: 5px solid #FFECB3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
