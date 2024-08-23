@@ -139,7 +139,10 @@ header p {
     padding: 20px;
     margin: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+
+    opacity: 0;
+    transform: translateY(50px) scale(0.95) rotate(-3deg);
+    transition: all 0.5s ease;
 }
 
 .benefit-item:hover {
@@ -184,6 +187,10 @@ header p {
     width: 300px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
 }
 
 .testimonial-card img {
@@ -247,6 +254,29 @@ footer {
 #download-container {
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.qr-container {
+    text-align: center;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 5px solid #FFECB3;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.qr-label {
+    font-size: 16px;
+    color: #795548;
+    font-weight: bold;
+    margin: 0;
 }
 
 .cta-button {
