@@ -98,3 +98,10 @@ gsap.from('#feature2', { opacity: 0, y: 50, duration: 1, delay: 0.4, ease: 'powe
 gsap.from('#feature3', { opacity: 0, y: 50, duration: 1, delay: 0.6, ease: 'power3.out' });
 gsap.from('#feature4', { opacity: 0, y: 50, duration: 1, delay: 0.8, ease: 'power3.out' });
 gsap.from('#feature5', { opacity: 0, y: 50, duration: 1, delay: 1.0, ease: 'power3.out' });
+
+const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('nav-links');
+
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
