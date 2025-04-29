@@ -5,11 +5,14 @@ import qrCodeImage from './qrcode.png';
 
 window.Alpine = Alpine;
 Alpine.start();
-
+console.log('QR image path:', qrCodeImage);
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener('DOMContentLoaded', () => {
     const downloadContainer = document.getElementById('download-container');
+    if (!downloadContainer) {
+        console.error('Download container not found');
+      }
     
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
